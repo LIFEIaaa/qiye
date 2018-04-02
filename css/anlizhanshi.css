@@ -587,6 +587,14 @@
 .yangtai{
 	font-size: 14px;
 	color: #010101;
+
+}
+.jindutiao.active{
+	opacity: 1;
+	visibility: visible;
+}
+.yangtai_jd.active{
+	visibility: visible;
 }
 .jindutiao{
 	width: 61px;
@@ -594,6 +602,7 @@
 	background-color: #E5E5E3;
 	margin-top: 9px;
 	position: relative;
+	opacity: 0;
 	visibility: hidden;
 }
 .yangtai_jd{
@@ -610,6 +619,7 @@
 }
 .chufang_kuang{
 	margin-left: 42px;
+	cursor: pointer;
 }
 .chufang_jd{
 	left: 13px;
@@ -623,12 +633,26 @@
 .woshi_jd{
 	left: 49px;
 }
-.wancheng_top{
+.wanchengmenu{
 	width: 990px;
 	height: 986px;
 	float: left;
 	margin-left: 100px;
 	margin-top: 46px;
+	position: relative;
+}
+.wancheng_top{
+	width: 990px;
+	height: 986px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.yangtai .active{
+	opacity: 1;
+}
+.wancheng_top.active{
+	z-index: 6;
 }
 .sheji1{
 	width: 316px;

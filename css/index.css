@@ -94,106 +94,44 @@
 	height: 540px;
 	background-color: #F5F5F5;
 	float: left;
-	
 	overflow: hidden;
+    position: relative;
 }
-.banner_center{
-	width: 1200px;
-	height: 540px;
-	margin: 0 auto;
-	position: relative;
-}
-.xian1{
-	float: left;
-}
-.xian2{
-	margin-left: 50px;
-}
-.xian3{
-	position: absolute;
-	top: 307px;
-	right: 1230px;
-}
-.xian4{
-	margin-top: 200px;
-}
-.xian5{
-	position: absolute;
-	top: 290px;
-	right: 0;
-}
-.lankuai{
-	width: 733px;
-	height: 306px;
-	background-color: #ADC4D2;
-	position: absolute;
-	top: 68px;
-	right: 210px;
-}
-.wzbk{
-	position: absolute;
-	top: 45px;
-	right: 352px;
-}
-.wzbj{
-	width: 211px;
-	height: 243px;
-	background-color: #EFF3F6;
-	border-top: 2px solid #FDFDFD;
-	position: absolute;
-	top: 66px;
-	right: 374px;
-}
-.jianyue{
-	float: right;
-	margin-top: 7px;
-}
-.jianyue_l{
-	float: right;
-	margin-right: 9px;
-	margin-top: 20px;
-}
-.hanzi{
-	float: right;
-	margin-right: 9px;
-	margin-top: 20px;
-}
-.yingwen{
-	float: right;
-	margin-right: 9px;
-	margin-top: 20px;
-}
-.zuokuang{
-	position: absolute;
-	top: 89px;
-	right: 304px;
-}
-.xiandai{
-	position: absolute;
-	top: 97px;
-	right: 312px;
-}
-.Nordic{
-	position: absolute;
-	top: 47px;
-	left: 365px;
-}
-.heid{
+.bannerdw{
 	position: absolute;
 	top: 0;
-	left: 52px;
+	right: 0;
+	width: 1366px;
+	height: 540px;
+	opacity: 0;
+	transition: all 1s;
 }
-.shafa{
-	position: absolute;
-	bottom: 33px;
-	left: 190px;
+.bannerbox{
+    width: 1366px;
+    height: 540px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.bannerbox .select{
+	opacity: 1;
+}
+.banner_center{
+    width: 1366px;
+    height: 540px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 83px;
 }
 .shuzi{
 	position: absolute;
 	width: 42px;
 	height: 171px;
-	bottom: 25px;
-	left: 17px;
+    bottom: 25px;
+	left: 33px;
+    z-index: 999;
 }
 .shuzi1{
 	width: 27px;
@@ -205,20 +143,26 @@
 	line-height: 32px;
 	position: relative;
 }
+.shuzi .select{
+	color: #2D6C8C;
+}
+.shuzi1 .select{
+	opacity: 1;
+}
 .zkuohao{
 	position: absolute;
 	top: 0;
 	left: 0;
-	visibility: hidden;
+	opacity: 0;
 }
 .ykuohao{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	visibility: hidden;
+	opacity: 0;
 }
 .shuzi1:hover .zkuohao,.shuzi1:hover .ykuohao{
-	visibility: visible;
+	opacity: 1;
 }
 .shuzi1:hover{
 	color: #2D6C8C;
